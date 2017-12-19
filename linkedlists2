@@ -22,6 +22,12 @@ class LinkedList:
     def add_list(self, *args):
         for a in args:
             self.list.append(a)
+            
+    def search(self, data):
+        if data in self.list:
+            return self.list.index(data)
+        else:
+            return False
 
     def print_list(self):
         for i in self.list:
