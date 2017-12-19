@@ -17,12 +17,12 @@ class LinkedList:
         return self.list[i-1]
 
     def del_data(self, data):
-        self.list.pop(data)
+        self.list.pop(self.list.index(data))
 
     def add_list(self, *args):
         for a in args:
             self.list.append(a)
-            
+
     def search(self, data):
         if data in self.list:
             return self.list.index(data)
