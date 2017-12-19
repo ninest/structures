@@ -1,0 +1,29 @@
+class LinkedList:
+    def __init__(self, *args):
+        self.list = []
+
+    def add(self, data):
+        self.list.append(data)
+
+    def insert(self, data, position):
+        self.list.insert(position, data)
+
+    def get_next(self, data):
+        i = self.list.index(data)
+        return self.list[i+1]
+
+    def get_previous(self, data):
+        i = self.list.index(data)
+        return self.list[i-1]
+
+    def del_data(self, data):
+        self.list.pop(data)
+
+    def add_list(self, *args):
+        for a in args:
+            self.list.append(a)
+
+    def print_list(self):
+        for i in self.list:
+            print(i)
+
