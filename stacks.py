@@ -45,6 +45,7 @@ class Stack:
             else:
                 print('stack full')
 
+# EXAMPLE:
 s = Stack(30)
 s.add_list(1,2,3,4,5,6,7,8,91,2,3)
 s.push(1)
