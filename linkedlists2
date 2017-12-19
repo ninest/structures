@@ -32,4 +32,19 @@ class LinkedList:
     def print_list(self):
         for i in self.list:
             print(i)
+            
+
+# EXAMPLE:
+main_list = LinkedList()
+main_list.add_list('a', 'b', 'c', 'd', 'e', 'f')
+
+print(main_list.search('a'))
+
+main_list.del_data('a')
+print(main_list.search('a')) # False
+
+
+print(main_list.get_next('d')) 
+
+print(main_list.get_next('f')) # returns error
 
