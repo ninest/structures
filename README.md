@@ -1,5 +1,4 @@
 # Data-Structures
----
 
 **linkedlist2.py**  
 add(data), insert(data, pos), get_next(data), get_previous(data), del_data(data), print_list() . 
