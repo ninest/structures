@@ -17,14 +17,14 @@ class Stack:
     def is_empty(self):
         return not bool(self.stack)
 
-    def print(self):
+    def display(self):
         r_list = []
         for item in reversed(self.stack):
             r_list.append(item)
 
         print(r_list)
 
-
+        
 # Example:
 s = Stack()
 print(s.is_empty())
@@ -38,4 +38,4 @@ s.push(8)
 s.pop()
 
 print(s.is_empty())
-s.print()
+s.display()
