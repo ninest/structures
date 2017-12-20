@@ -1,39 +1,90 @@
-"""Linked Lists"""
-
 class Node:
-    def __init__(self, data=None, next=None):
+    def __init__(self, data=None):
+        """data stores the data in the list and next does NOT store the data of the next list
+           next stores the object of the next data (it stores a Node() object)"""
+
         self.data = data
-        self.next = next
+        self.next = None
+
 
 class LinkedList:
     def __init__(self):
-        self.current_node = None
+        self.head = Node()
 
-    def add_node(self, data):
-        new = Node()
-        new.data = data
-        new.next = self.current_node #current_node.data and current_node.next exist
+    def append(self, data):
+        new_node = Node(data)
+        current_node = self.head
 
-        self.current_node = new
+        print(current_node.next is not None)    # current_node.next stores a Node() object
+        while current_node.next is not None:    # checking whether there is a next Node() object (it can be None)
+            print('D: ', current_node.next is not None)
+            current_node = current_node.next
 
-    def print_list(self):
-        pnode = self.current_node
-        while pnode:
-            print(pnode.data)
-            pnode = pnode.next
+        current_node.next = new_node
 
-    def get_next(self):
-        pass
+    def length(self):
+        current_node = self.head
+        total = 0
 
-'''
-    def insert_node(self, data, position):
-        new = Node()
-        new.data = data
-        new.next
-'''
+        while current_node is not None:
+            total += 1
+            current_node = current_node.next
+            # will return none if it is the last node because it does point to anything
 
-l = LinkedList()
-l.add_node(1)
-l.add_node(2)
-l.add_node(3)
-l.print_list()
+        return total
+
+    def display(self):
+        elements = []
+        current_node = self.head
+
+        while current_node.next is not None:
+            current_node = current_node.next
+            elements.append(current_node.data)
+
+        print(elements)
+
+    def get(self, index):   # index at which we want to check data
+        if index >= self.length():
+            print('ERROR')
+            return None
+
+        current_index = 0
+        current_node = self.head
+
+        while True:
+            current_node = current_node.next
+            if current_index == index:
+                return current_node.data
+            current_index += 1
+
+    def erase(self, index):
+        if index >= self.length():
+            print("ERROR")
+            return None
+
+        current_index = 0
+        current_node = self.head
+
+        while True:
+            last_node = current_node
+            current_node = current_node.next
+
+            if current_index == index:
+                last_node.next = current_node.next
+                break
+
+            current_index += 1
+
+
+# EXAMPLE:
+ll = LinkedList()
+ll.append(1)
+ll.append(2)
+ll.append(3)
+ll.append(4)
+ll.display()
+
+print(ll.get(2))
+
+ll.erase(2)
+ll.display()
