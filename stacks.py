@@ -1,58 +1,41 @@
 class Stack:
-    def __init__(self, size):
-        self.list = []
-        self.size = size
+    """First in, last out; last element is at top of list (first element while being printed"""
+    # sds
 
-    def push(self, value):
-        if len(self.list) <= self.size:
-            self.list.append(value)
-        else:
-            print('stack full')
-            #raise Exception('Stack is full')
+    def __init__(self):
+        self.stack = []
+
+    def push(self, data):
+        self.stack.append(data)
 
     def pop(self):
-        if not self.is_empty():
-            self.list.pop()
-        else:
-            print('stack empty')
-            # raise Exception('stack empty')
+        self.stack.pop()
 
-    #nomber of elements in stack
-    def no_elements(self):
-        return len(self.list) - 1
-
-    def top(self):
-        if not self.is_empty():
-            #print(self.list[self.size - 1])
-            return self.list[self.no_elements()]
-        else:
-            print('stack empty')
-            # raise Exception('stack empty')
+    def size(self):
+        return len(self.stack)
 
     def is_empty(self):
-        return not bool(self.list)
+        return not bool(self.stack)
 
-    def get_stack(self):
-        return self.list
-        #print("\nSTACK:")
-        #for i in self.list:
-        #    print(i)
+    def print(self):
+        r_list = []
+        for item in reversed(self.stack):
+            r_list.append(item)
 
-    def add_list(self, *args):
-        for a in args:
-            if len(self.list) <= self.size:
-                self.list.append(a)
-            else:
-                print('stack full')
+        print(r_list)
 
-# EXAMPLE:
-s = Stack(30)
-s.add_list(1,2,3,4,5,6,7,8,91,2,3)
+
+# Example:
+s = Stack()
+print(s.is_empty())
+
 s.push(1)
+s.push(4)
+s.push(5)
 s.push(2)
+s.push(8)
 
-print('stack size: ', s.size)
-print("top: ", s.top())
-print("number of elements: ", s.no_elements())
-print('stack: ', s.get_stack())
+s.pop()
 
+print(s.is_empty())
+s.print()
