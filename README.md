@@ -1,10 +1,15 @@
-# Data-Structures
+# Algorithms
 
-**linkedlist.py**  
-```append(), erase() length(), display(), get()  ```
+## Abstract data strucutres
+- (Stacks)[https://github.com/themindstorm/Data-Structures/blob/master/stacks.md]
+- (Queues)[https://github.com/themindstorm/Data-Structures/blob/master/queues.md]
 
-**stack.py**  
-```push(), pop(), size(), is_empty(), display()```
+## Searching and sorting
 
+### Searchig
+- Sequential search
+- Binary search
 
-Currently, only linked lists have been implemented in Python, although the code is being refactored. Stacks will also be added as another abstract data structure for python. 
+### Sorting
+- Bubble sort
+- Selection sort
