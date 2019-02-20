@@ -16,6 +16,8 @@ loop K from 0 to LIST.length() - 1
 end loop
 ```
 
+The last two values will already be sorted, so it's no use traversing through them.
+
 ## Selection sort
 
 ```
