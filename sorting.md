@@ -23,10 +23,10 @@ The last two values will already be sorted, so it's no use traversing through th
 ```
 LIST = [2, 3, 5, 1, 5, 10, 13, 8]
 
-loop I from 0 to LIST.length()-2  //once done till n-2, n-1 will be sorted already
+loop I from 0 to LIST.length()-1  //once done till n-1, n will be sorted already
   MIN = I
   
-  loop J from I+1 to LIST.length()-1
+  loop J from I+1 to LIST.length()
     if LIST[I] < LIST[MIN]
       MIN = J
     end if
