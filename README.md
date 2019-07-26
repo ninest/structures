@@ -14,7 +14,7 @@
 - Bubble sort
 - Selection sort
 
-|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|
---|--|--|--|--|--|--|--|--|--|--|--|--|--|--
-|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|
-|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|
+Markdown | Less | Pretty | Markdown | Less | Pretty
+--- | --- | --- | --- | --- | ---
+*Still* | `renders` | **nicely** | Markdown | Less | Pretty
+1 | 2 | 3 | Markdown | Less | Pretty
