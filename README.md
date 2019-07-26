@@ -15,5 +15,6 @@
 - Selection sort
 
 |test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|
+--|--|--|--|--|--|--|--|--|--|--|--|--|--|--
 |test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|
 |test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|test|
