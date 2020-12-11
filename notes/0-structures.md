@@ -1,6 +1,6 @@
 # Structures
 A **data structure** (DS) is a way of organizing data so that it can be used effectively.
-- Essential for creaint fast and efficient algorithms
+- Essential for create fast and efficient algorithms
 - Help manage and organize data
 - Make code cleaer and easier to understand
 

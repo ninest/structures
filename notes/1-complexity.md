@@ -13,7 +13,9 @@ Big-O Notation gives an upper bound of the complexity in the **worst case**, hel
 The time complexity is the n that is the biggest/most dominant term. For example,
 
 ```
-f(n) = n^3 + n^2 +7  # n^3 is the largest value for n
+f(n) = n^3 + n^2 +7  
+# n^3 is the largest value for n
+
 O(f(n)) = O(n^3)
 ```
 
@@ -32,7 +34,7 @@ while i < 10:
 
 For both of the above, **even if the input size gets arbitrarily large**, the program is still executed in the same amount of time.
 
-#### Lienar (O(n))
+#### Linear (O(n))
 
 ```
 i = 0
@@ -72,9 +74,9 @@ for i in range(n):  <-- need to confirm
 #O(n(n+1)/2) = O(n^2)
 ```
 
-#### Logarithm (O(logn))
+#### Logarithm (O(log n))
 
-Binary search produced a time complexity of O(logn):
+Binary search produced a time complexity of O(log n):
 ```
 low = 0
 high = n-1
